@@ -14,16 +14,10 @@ class ConfPacupdate:
 
 
     def directoryExists(self, dir):
-        if path.isdir(dir):
-            return True
-        else:
-            return False
+        return path.isdir(dir)
 
     def fileExists(self, file):
-        if path.isfile(file):
-            return True
-        else:
-            return False
+        return path.isdir(dir)
 
     def createDefaultConf(self):
         if self.directoryExists(self.pacman_conf_dir):
