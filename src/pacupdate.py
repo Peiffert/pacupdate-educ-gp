@@ -8,9 +8,9 @@ from gtk import main
 from gobject import timeout_add
 
 def call_updates(data=None):
-    '''
+
     Call the update method
-    '''
+
     
     pacupdate.on_updates(PacupdateTrayIcon)
     return True
@@ -22,7 +22,7 @@ pacupdate = PacupdateTrayIcon()
 pacupdate.create_tray()
 
 # Get the time of interval
-update_time = int(ConfPacupdate().readConf().get('global', 'update_interval')) * 60000
+update_time = int(ConfPacupdate().readConf().get('global', 'update_interval')) 
 
 # Run updates periodically
 call = timeout_add(int(update_time), call_updates, pacupdate)
