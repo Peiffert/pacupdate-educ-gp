@@ -1,8 +1,0 @@
-TODO:
-=================================
-
-* Add an option to allow pacupdate update the system (probably using gksu)
-* Add support for translations
-* Add an option to read news related to Arch Linux (from the official site and communities)
-* Add an option to show or not the ShowSize, if exists in pacman.conf 
-* Change download size font to a different colour, if it is enabled in pacman.conf
