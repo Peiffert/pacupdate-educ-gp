@@ -1,0 +1,171 @@
+2008-08-13 18:12  kessiapinheiro
+
+	* src/pacupdate/tray.py: Right click show the packages to be
+	  updated.
+
+2008-08-13 14:22  kessiapinheiro
+
+	* src/pacupdate.py, src/pacupdate/tray.py,
+	  src/pacupdate/updatechecker.py: Change updatechecker.py for show
+	  how many updates you have.
+
+2008-08-13 13:50  kessiapinheiro
+
+	* src/pacupdate.py: Fix stupid timeout.
+
+2008-08-13 13:44  kessiapinheiro
+
+	* src/pacupdate.py, src/pacupdate/tray.py: Fix pacupdate.py to
+	  instance one object before get the gbject.timeout_add() make the
+	  callback.
+
+2008-08-13 13:00  hugodoria
+
+	* src/pacupdate/tray.py: Tray icon is now blinking when syncing db.
+	  Fixed bug that was not showing updates when run automatically.
+
+2008-08-12 17:53  kessiapinheiro
+
+	* ChangeLog, TODO, src/pacupdate/tray.py,
+	  src/pacupdate/updatechecker.py: Add cut_packages() to
+	  updatechecker, now notify only the packages name. Fix tray.py to
+	  use current directory if cannot load pacupdate images.
+
+2008-08-12 13:19  hugodoria
+
+	* src/pacupdate/confpacupdate.py: pacupdate.conf path changed to
+	  ~/.config/
+
+2008-08-12 13:15  hugodoria
+
+	* pacupdate.desktop, src/pacupdate/tray.py,
+	  src/pacupdate/updatechecker.py: fixed bug in updatechecker.py and
+	  icon path in pacupdate.desktop. Also pacupdate now changes tray
+	  icon when finds a update
+
+2008-08-11 22:16  kessiapinheiro
+
+	* Makefile: Fix Makefile, the make dist function.
+
+2008-08-11 21:50  kessiapinheiro
+
+	* Makefile: Fix Makefile to copy all files excluded by a misterious
+	  regex.
+
+2008-08-11 21:20  kessiapinheiro
+
+	* Makefile, setup.py, src/pacupdate/tray.py: Fix setup.py and
+	  Makefile.
+
+2008-08-11 20:20  hugodoria
+
+	* AUTHORS, COPYING, INSTALL, README, TODO, setup.py, src/glade:
+	  some small changes before 0.1 release. setup.py modified, all
+	  glade stuff removed and some minor changes in AUTHORS, README and
+	  LICENSE
+
+2008-08-11 15:36  kessiapinheiro
+
+	* ChangeLog, src/pacupdate.py: Fix pacupdate.py to new path.
+
+2008-08-11 15:32  kessiapinheiro
+
+	* ChangeLog, INSTALL, Makefile, README, TODO, img,
+	  pacupdate.desktop, pacupdate.py, setup.py, src/__init__.py,
+	  src/confpacupdate.py, src/glade, src/glade/gui.glade,
+	  src/gui.glade, src/gui.py, src/img, src/img/pacupdate.svg,
+	  src/pacupdate, src/pacupdate.py, src/pacupdate/__init__.py,
+	  src/pacupdate/confpacupdate.py, src/pacupdate/gui.py,
+	  src/pacupdate/process.py, src/pacupdate/tray.py,
+	  src/pacupdate/updatechecker.py, src/process.py, src/scripts,
+	  src/scripts/pacupdate, src/tray.py, src/updatechecker.py: Change
+	  the pacupdate.conf path to ~/.config. Change some directory
+	  structure for a better setup install script. Add a setup.py,
+	  pacupdate.desktop, INSTALL, Makefile, TODO and Changelog
+	  (generated with svn2cl).
+
+2008-08-09 06:19  kessiapinheiro
+
+	* pacupdate.py, src/process.py, src/tray.py, src/updatechecker.py:
+	  Add process.py with methods to fix and improve sync_db().
+
+2008-08-09 03:13  hugodoria
+
+	* pacupdate.py, src/gui.py, src/tray.py, src/updatechecker.py:
+	  tray.py re-arranged
+
+2008-08-09 01:46  hugodoria
+
+	* pacupdate.py, src/confpacupdate.py, src/tray.py,
+	  src/updatechecker.py: fixing trayicon bug when syncing database
+	  and update_time
+
+2008-08-09 00:50  kessiapinheiro
+
+	* pacupdate.py, src/tray.py: Sync periodically now works. Created
+	  method create_tray(self) to create the systray, now anymore in
+	  __init__.
+
+2008-08-08 22:56  hugodoria
+
+	* src/confpacupdate.py, src/gui.py, src/tray.py,
+	  src/updatechecker.py: notification delay option added
+
+2008-08-08 19:28  hugodoria
+
+	* src/confpacupdate.py, src/gui.py, src/tray.py,
+	  src/updatechecker.py: class to write/read pacupdate
+	  configurations created and several small bugs fixed
+
+2008-08-08 17:10  kessiapinheiro
+
+	* src/gui.py: Fix apply and cancel buttons of preferencies. NOW
+	  works...
+
+2008-08-08 16:56  hugodoria
+
+	* src/gui.py, src/tray.py: omg! kessia is a bug maker. fixing last
+	  commit
+
+2008-08-08 16:38  kessiapinheiro
+
+	* src/gui.py: Fix apply and cancel buttons of notify popup.
+
+2008-08-08 13:28  kessiapinheiro
+
+	* src/tray.py: Fix svn merge stupid update
+
+2008-08-08 13:07  kessiapinheiro
+
+	* img/pacupdate-alert.png, img/pacupdate-pack.png, pacupdate.py,
+	  src/updatechecker.py: Fix get_updates() to return None when dont
+	  have updates. Change the icon colors
+
+2008-08-08 00:16  hugodoria
+
+	* src/gui.py, src/tray.py: preferences window created
+
+2008-08-07 22:33  kessiapinheiro
+
+	* src/tray.py: Fix tray icon path
+
+2008-08-07 22:01  hugodoria
+
+	* src/tray.py, src/updatechecker.py: new notification color
+
+2008-08-07 20:42  hugodoria
+
+	* img/Alert.png, img/Pack.png, img/pacupdate-alert.png,
+	  img/pacupdate-pack.png, src/tray.py, src/updatechecker.py: images
+	  renamed and tray.py updated
+
+2008-08-07 19:07  hugodoria
+
+	* AUTHORS, COPYING, LICENSE, README, img, img/Alert.png,
+	  img/Pack.png, pacupdate.py, src, src/__init__.py, src/gui.glade,
+	  src/tray.py, src/updatechecker.py: testing svn
+
+2008-08-07 18:42  
+
+	* .: Initial directory structure.
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+GenericName=Pacman Updater (pacupdate)
+Comment=update notifier for Arch Linux (pacman)
+Name=pacupdate
+Exec=pacupdate
+Icon=/usr/share/pacupdate/img/pacupdate.svg
+Type=Application
+Terminal=false
+Categories=Application;System;

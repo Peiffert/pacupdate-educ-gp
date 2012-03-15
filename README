@@ -1,0 +1,22 @@
+README for pacupdate
+=======================
+
+Pacupdate is a small notifier for Arch Linux (pacman) updates.
+
+Many thanks to the following people who directly and indirectly helped with this project:
+
+    * Henrique C. Alves <hcarvalhoalves@gmail.com>
+    * Og Maciel <ogmaciel@gnome.org>
+    * Paulo Matias <matias@archlinux-br.org>
+
+DEPENDENCIES
+============
+
+sudo
+pygtk >= 2.10
+python-notify
+notification-daemon
+
+INSTALLATION
+============
+See the 'INSTALL' file.
